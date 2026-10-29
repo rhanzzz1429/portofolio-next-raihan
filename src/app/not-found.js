@@ -18,9 +18,11 @@ export default function NotFound() {
         </h2>
 
         <p className="mt-4 text-sm text-white/40">
-          Informasi yang kamu cari nampaknya sedang berlibur. Tapi jangan khawatir, kamu bisa kembali ke halaman utama untuk melihat informasi lainnya.
+          Informasi yang kamu cari nampaknya sedang berlibur. 
         </p>
-
+        <p className="text-sm text-white/40">
+            Tapi jangan khawatir, kamu bisa kembali ke halaman utama untuk melihat informasi lainnya.
+        </p>
         <Link
           href="/"
           className="mt-8 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-medium text-black transition hover:bg-white/90"
