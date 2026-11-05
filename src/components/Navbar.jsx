@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import TombolTema from "@/components/TombolTema";
 
 const menu = [
     { href: "/", label: "Beranda" },
@@ -12,12 +13,12 @@ const menu = [
 
 export default function Navbar() {
     const pathname = usePathname();
-
+    
     return (
         <header className="bg-utama text-white">
             <nav className="mx-auto flex max-w-5xl flex-col gap-3 px-4 py-4 md:flex-row md:items-center md:justify-between">
                 <Link href="/" className="text-xl font-bold">
-                    Mukhammad Raihan Apriliansyah
+                  Mukhammad Raihan Apriliansyah
                 </Link>
                 <ul className="flex flex-wrap gap-x-5 gap-y-2">
                     {menu.map((item) => {
@@ -38,6 +39,7 @@ export default function Navbar() {
                         );
                     })}
                 </ul>
+                <TombolTema />
             </nav>
         </header>
     );

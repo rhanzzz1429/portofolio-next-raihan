@@ -25,7 +25,7 @@ export default function NotFound() {
         </p>
         <Link
           href="/"
-          className="mt-8 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-medium text-black transition hover:bg-white/90"
+          className="mt-8 inline-flex items-center gap-2 rounded-full bg-white dark:bg-gray-800 px-6 py-3 text-sm font-medium text-black transition hover:bg-white dark:bg-gray-800/90"
         >
           <ArrowLeft size={16} />
           Kembali ke Beranda
