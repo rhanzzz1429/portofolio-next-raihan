@@ -1,4 +1,5 @@
 import FormKontak from "@/components/FormKontak";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const metadata = {
     title: "Kontak",
@@ -15,28 +16,35 @@ export default function Kontak() {
                 Punya pertanyaan atau ingin bekerja sama? isi form berikut.
             </p>
 
-            <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-3">
-                <section className="w-full min-w-0 rounded-xl border border-gray-200 bg-white p-5 shadow-sm dark:border-gray-700 dark:bg-gray-800 md:col-span-2">
+            <div className="grid grid-cols-2 gap-6 md:grid-cols-3">
+            <Card className="md:col-span-2">
+                <CardContent>
                     <FormKontak />
-                </section>
+                </CardContent>
+            </Card>
+            <Card>
+                <CardHeader>
 
-                <aside className="w-full min-w-0 rounded-xl border border-gray-200 bg-white p-5 shadow-sm dark:border-gray-700 dark:bg-gray-800 md:col-span-1">
-                    <h3 className="font-bold text-xl">Temukan saya di </h3>
-                    <ul>
-                        <li 
-                         className="font-semibold text-aksen mt-3"
-                        >
-                            <a 
-                             href="https://github.com/rhanzzz1429"
-                            >
-                                Github
+                    <CardTitle className="text-2xl font-bold text-primary">Temukan Saya di</CardTitle>
+
+                </CardHeader>
+                <CardContent>
+                    <ul className="space-y-2">
+                        <li>
+                            <a href="https://github.com/rhanzzz1429"
+                                target="_blank" className="font-bold text-aksen hover:underline">
+                                GitHub
                             </a>
                         </li>
-                        <li className="font-semibold text-aksen">
-                           rhanzzz1429@gmail.com
+                        <li>
+                            <a href="mailto:rhanzzz1429@gmail.com"
+                                className="font-bold text-aksen hover:underline">
+                                rhanzzz1429@gmail.com
+                            </a>
                         </li>
                     </ul>
-                </aside>
+                </CardContent>
+            </Card>
             </div>
         </main>
     );
