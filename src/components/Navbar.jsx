@@ -16,7 +16,7 @@ export default function Navbar() {
     const pathname = usePathname();
     
     return (
-        <header className="bg-utama text-white">
+        <header className="bg-utama text-white sticky top-0 z-10">
             <nav className="mx-auto flex max-w-5xl flex-col gap-3 px-4 py-4 md:flex-row md:items-center md:justify-between">
                 <Link href="/" className="text-xl font-bold">
                   Mukhammad Raihan Apriliansyah
